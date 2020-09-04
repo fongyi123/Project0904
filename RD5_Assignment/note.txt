@@ -1,0 +1,51 @@
+1.
+https://medium.com/@ekkodo/node-js-restful-web-api-範例-for-mysql-d8be860594c1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+create table member
+(
+    mid int auto_increment primary key,
+    mname varchar(50),
+    maccount varchar(50),
+    mpassword varchar(50),
+    mbalance varchar(50) DEFAULT '1000'
+
+);
+
+create table detail
+(
+    did int auto_increment primary key,
+    daccount varchar(50),
+    dtranstype varchar(50),
+    dtrade int,
+    dtransdate datetime
+);
+
+create table transaction
+(
+    transaction int auto_increment primary key,
+    account varchar(20),
+    transtype varchar(20),
+    trade int,
+    transdate datetime
+    
+)

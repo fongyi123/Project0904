@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var $content = $('#content');
+        var $select = $('#select');
+        var $btn = $('#btn');
+        var county = [];
+        var result;
+        $.get('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-091?Authorization=CWB-0EF10C78-E76B-49E3-BD74-05B21416C3F5&format=JSON', function (data) {
+            console.log(data);
+            data.forEach(function (e, i) {
+                county[i] = e.County;
+            });
+            result = county.filter(function (element, index, arr) {
+                return arr.indexOf(element) === index;
+            });
+            //篩選出縣市名稱(不然會很多重複)
+            result.forEach(function (e) {
+                $select.appendTo('<option value="' + e + '">' + e + '</option>');
+            });
+
+            $btn.on('click', function () {
+                var s = $select.val();
+                $content.html(''); //清空內容
+                data.forEach(function (e, i) {
+                    //挑選對應的縣市顯示
+                    if (e.County == s) {
+                        $content.append('< ' + e.locationName + ' > PM2.5:' + e['PM2.5'] + ' , PM10: ' + e.County + '<br/>');
+                        $content.appendTo("#h");
+                    }
+                });
+            });
+        });
+        
+    </script>
+</head>
+
+<body>
+    <select id="county"></select>
+    <select id="sitename"></select>
+    <div id="content"></div>
+    <button id="btn">開始查詢</button>
+    <h1 id="h"></h1>
+</body>
+
+</html>

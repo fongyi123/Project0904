@@ -1,0 +1,333 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "F-D0047-089",
+    "fields": [
+      {
+        "id": "contentDescription",
+        "type": "String"
+      },
+      {
+        "id": "datasetDescription",
+        "type": "String"
+      },
+      {
+        "id": "locationsName",
+        "type": "String"
+      },
+      {
+        "id": "dataid",
+        "type": "String"
+      },
+      {
+        "id": "locationName",
+        "type": "String"
+      },
+      {
+        "id": "geocode",
+        "type": "Double"
+      },
+      {
+        "id": "lat",
+        "type": "Double"
+      },
+      {
+        "id": "lon",
+        "type": "Double"
+      },
+      {
+        "id": "elementName",
+        "type": "String"
+      },
+      {
+        "id": "description",
+        "type": "String"
+      },
+      {
+        "id": "startTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "endTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "dataTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "value",
+        "type": "String"
+      },
+      {
+        "id": "measures",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "locations": [
+      {
+        "datasetDescription": "臺灣各縣市鄉鎮未來3天(72小時)逐3小時天氣預報",
+        "locationsName": "台灣",
+        "dataid": "D0047-089",
+        "location": [
+          {
+            "locationName": "宜蘭縣",
+            "geocode": "10002",
+            "lat": "24.753707",
+            "lon": "121.745083",
+            "weatherElement": [
+              {
+                "elementName": "WeatherDescription",
+                "description": "天氣預報綜合描述",
+                "time": [
+                  {
+                    "startTime": "2020-08-28 12:00:00",
+                    "endTime": "2020-08-28 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。降雨機率 20%。溫度攝氏34度。易中暑。東南風 平均風速<= 1級(每秒0公尺)。相對濕度72%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-28 15:00:00",
+                    "endTime": "2020-08-28 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。降雨機率 20%。溫度攝氏33度。易中暑。偏南風 平均風速<= 1級(每秒0公尺)。相對濕度83%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-28 18:00:00",
+                    "endTime": "2020-08-28 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。降雨機率 10%。溫度攝氏30度。悶熱。偏南風 平均風速<= 1級(每秒0公尺)。相對濕度83%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-28 21:00:00",
+                    "endTime": "2020-08-29 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。降雨機率 10%。溫度攝氏28度。悶熱。西北風 平均風速<= 1級(每秒0公尺)。相對濕度81%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-29 00:00:00",
+                    "endTime": "2020-08-29 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。降雨機率 20%。溫度攝氏28度。悶熱。西北風 平均風速<= 1級(每秒2公尺)。相對濕度83%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-29 03:00:00",
+                    "endTime": "2020-08-29 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。降雨機率 20%。溫度攝氏27度。舒適。偏西風 平均風速<= 1級(每秒1公尺)。相對濕度83%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-29 06:00:00",
+                    "endTime": "2020-08-29 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。降雨機率 20%。溫度攝氏26度。舒適。偏東風 平均風速<= 1級(每秒2公尺)。相對濕度80%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-29 09:00:00",
+                    "endTime": "2020-08-29 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。降雨機率 20%。溫度攝氏31度。悶熱。偏東風 平均風速<= 1級(每秒2公尺)。相對濕度74%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-29 12:00:00",
+                    "endTime": "2020-08-29 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "午後短暫雷陣雨。降雨機率 40%。溫度攝氏33度。易中暑。偏東風 平均風速<= 1級(每秒0公尺)。相對濕度81%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-29 15:00:00",
+                    "endTime": "2020-08-29 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "陰。降雨機率 40%。溫度攝氏32度。易中暑。西南風 平均風速<= 1級(每秒0公尺)。相對濕度88%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-29 18:00:00",
+                    "endTime": "2020-08-29 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫陣雨。降雨機率 30%。溫度攝氏30度。悶熱。東南風 平均風速<= 1級(每秒0公尺)。相對濕度81%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-29 21:00:00",
+                    "endTime": "2020-08-30 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。降雨機率 30%。溫度攝氏28度。悶熱。東南風 平均風速<= 1級(每秒0公尺)。相對濕度76%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-30 00:00:00",
+                    "endTime": "2020-08-30 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。降雨機率 20%。溫度攝氏27度。悶熱。偏西風 平均風速<= 1級(每秒1公尺)。相對濕度79%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-30 03:00:00",
+                    "endTime": "2020-08-30 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "晴。降雨機率 20%。溫度攝氏27度。悶熱。偏西風 平均風速<= 1級(每秒2公尺)。相對濕度84%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-30 06:00:00",
+                    "endTime": "2020-08-30 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "晴。降雨機率 10%。溫度攝氏26度。舒適。偏南風 平均風速<= 1級(每秒0公尺)。相對濕度81%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-30 09:00:00",
+                    "endTime": "2020-08-30 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "晴。降雨機率 10%。溫度攝氏31度。悶熱。偏東風 平均風速<= 1級(每秒2公尺)。相對濕度74%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-30 12:00:00",
+                    "endTime": "2020-08-30 15:00:00",
+                    "elementValue": [
+                      {
+                        "value": "晴。降雨機率 30%。溫度攝氏34度。易中暑。偏東風 平均風速<= 1級(每秒2公尺)。相對濕度71%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-30 15:00:00",
+                    "endTime": "2020-08-30 18:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫陣雨。降雨機率 30%。溫度攝氏32度。悶熱。偏東風 平均風速<= 1級(每秒1公尺)。相對濕度70%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-30 18:00:00",
+                    "endTime": "2020-08-30 21:00:00",
+                    "elementValue": [
+                      {
+                        "value": "短暫陣雨。降雨機率 30%。溫度攝氏30度。悶熱。偏西風 平均風速<= 1級(每秒1公尺)。相對濕度77%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-30 21:00:00",
+                    "endTime": "2020-08-31 00:00:00",
+                    "elementValue": [
+                      {
+                        "value": "晴。降雨機率 30%。溫度攝氏28度。悶熱。西北風 平均風速<= 1級(每秒1公尺)。相對濕度75%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-31 00:00:00",
+                    "endTime": "2020-08-31 03:00:00",
+                    "elementValue": [
+                      {
+                        "value": "晴。降雨機率 10%。溫度攝氏27度。舒適。偏西風 平均風速<= 1級(每秒2公尺)。相對濕度73%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-31 03:00:00",
+                    "endTime": "2020-08-31 06:00:00",
+                    "elementValue": [
+                      {
+                        "value": "晴。降雨機率 10%。溫度攝氏26度。舒適。偏西風 平均風速<= 1級(每秒2公尺)。相對濕度80%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-31 06:00:00",
+                    "endTime": "2020-08-31 09:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。溫度攝氏26度。舒適。西北風 平均風速1-2級(每秒3公尺)。相對濕度82%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  },
+                  {
+                    "startTime": "2020-08-31 09:00:00",
+                    "endTime": "2020-08-31 12:00:00",
+                    "elementValue": [
+                      {
+                        "value": "多雲。溫度攝氏32度。悶熱。偏北風 平均風速1-2級(每秒3公尺)。相對濕度74%。",
+                        "measures": "NA"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

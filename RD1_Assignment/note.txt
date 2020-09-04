@@ -1,0 +1,355 @@
+1.接氣象局api、跨網域ajax資料
+
+https://letswrite.tw/api-cross-domain-node/
+
+
+2.中央氣象局開放資料平臺之資料擷取API
+CWB-0EF10C78-E76B-49E3-BD74-05B21416C3F5
+https://opendata.cwb.gov.tw/dist/opendata-swagger.html#/
+
+
+3.[Javascript] <div> 隱藏法</div>
+https://blog.xuite.net/mangohost/wretch/123102961-%5BJavascript%5D+%3Cdiv%3E+隱藏法%3C%2Fdiv%3E
+
+
+4.JS & JQuery 顯示與隱藏 HTML DIV 的處理
+https://kanchengzxdfgcv.blogspot.com/2019/01/js-jquery-html-div.html
+// document.getElementById("card").style.display="none";
+
+5.Opendata + Webduino ( 網頁前端 )
+https://ithelp.ithome.com.tw/articles/10188594?sc=iThomeR
+
+6.08. Open data 介紹與使用指南
+https://ithelp.ithome.com.tw/articles/10191314
+
+7.
+http://seansharingblog.blogspot.com/2018/04/javascript-get-json.html
+
+8.
+https://creativecoding.in/2020/03/28/讓我們來做個互動天氣地圖吧！（直播筆記）/
+
+9.
+https://siddharam.com.tw/post/20190809/
+
+10.
+https://justjii.wordpress.com/2015/02/24/如何透過php取得天氣資料/
+
+11.JSON->mysql
+https://stackoverflow.com/questions/57955376/parse-json-data-from-url-to-mysql
+
+12.mysql->html
+https://www.w3schools.com/js/js_json_sql.asp
+
+13.
+https://medium.com/@miahsuwork/第六週-api-基礎-json-restful-curl-指令-28670813764e
+
+14.
+https://leahlin912.github.io/2019/04/08/JS-使用API串接公開第三方資源/
+
+15.使用jquery跟php接json格式資料
+https://ithelp.ithome.com.tw/articles/10102081
+
+16.
+https://stackoverflow.com/questions/24382785/php-require-once-js-file
+
+17.
+https://medium.com/@kumarmanishc/restful-apis-using-php-and-mysql-dc7e6f96db8e
+
+18.[PHP] PHP讀JSON並將結果存進MySQL
+https://charleslin74.pixnet.net/blog/post/436304452
+
+
+
+19.Insert json array data from url into mysql
+https://stackoverflow.com/questions/35790235/insert-json-array-data-from-url-into-mysql
+
+20.
+http://mrbool.com/how-to-insert-retrieve-json-data-to-from-database-using-php/36810
+
+21.
+https://www.w3schools.com/nodejs/nodejs_mysql_insert.asp
+
+22.mysql中的PHP變數呼叫$ sql（SELECT * FROM示例wHERE示例="$ example"）
+https://t.codebug.vip/questions-730251.htm
+
+23.如何在按鈕單擊時呼叫PHP函式
+http://www.366service.com/zh-tw/qa/c9e65deccf697ba64c184a72cbcfdd9c
+
+24.DAY3.PHP-下拉式選單與for迴圈.while
+https://ithelp.ithome.com.tw/articles/10211875
+
+25.
+http://epaper.gotop.com.tw/epaper/Q1614/【書摘73】A409.pdf
+
+26.[PHP + mySQL] mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in ... 的解決辦法
+http://ythsuprogram.blogspot.com/2015/09/mysql-mysqlifetcharray-expects.html
+
+27.debug
+https://www.hellosanta.com.tw/blog/how-to-set-up-xdebug-and-mamp-on-vscode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+安裝 Composer---MAC
+https://tony915.gitbooks.io/laravel4/content/install/install_composer.html
+
+安裝 Composer---windows
+https://ithelp.ithome.com.tw/articles/10190770
+
+jquery換多張圖
+https://ithelp.ithome.com.tw/questions/10194192
+
+
+<!-- <script>
+    $(function () {
+      $('.card img').mouseover(function () {
+        this.src = this.src.replace(/(.*?)(\/)(\w{4,8})(_\d{1,2})(.jpg)$/, "$1$2colorful$4$5");
+      }).mouseout(function () {
+        this.src = this.src.replace(/(.*?)(\/)(\w{4,8})(_\d{1,2})(.jpg)$/, "$1$2gray$4$5");
+      });
+    });
+  </script> -->
+
+
+
+
+  function clickFunc() {
+            
+      
+      
+    //         var card = document.getAttribute("img1");
+            // document.getElementById("card").style.display="block";
+            // console.log(val);
+            // alert(val);
+            // var show1 = document.getElementById('test1');
+
+            // if (show1.style.display != 'block') { 
+            //     show1.style.display = 'block';
+            //     show2.style.display = 'none';
+            // } else {
+            //     show1.style.display = 'none';
+            //     show2.style.display = 'block';
+            // }
+            // var x = document.getElementsByTagName("img")[0].getAttribute("style");
+            // document.getElementById("card").innerHTML = x;
+        // }
+
+    // window.onload = function() {
+    //         //给selector绑定option点击
+    //         addEventHandle("city", clickFunc);
+    //     }
+
+
+
+    $("#submit").click(function () {
+    //   $.ajax({
+    //     type: "GET",
+    //     url: "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-0EF10C78-E76B-49E3-BD74-05B21416C3F5&format=JSON",
+    //     dataType: "json",
+    //     data: {
+    //       "success": "true",
+    //       "result": {
+    //         "resource_id": "F-C0032-001",
+    //         "fields": [
+    //           {
+    //             "id": "datasetDescription",
+    //             "type": "String"
+    //           },
+    //           {
+    //             "id": "locationName",
+    //             "type": "String"
+    //           },
+    //           {
+    //             "id": "parameterName",
+    //             "type": "String"
+    //           },
+    //           {
+    //             "id": "parameterValue",
+    //             "type": "String"
+    //           },
+    //           {
+    //             "id": "parameterUnit",
+    //             "type": "String"
+    //           },
+    //           {
+    //             "id": "startTime",
+    //             "type": "Timestamp"
+    //           },
+    //           {
+    //             "id": "endTime",
+    //             "type": "Timestamp"
+    //           }
+    //         ]
+    //       }
+    //     }
+    //   })
+    //     .done(function (json) {
+    //       $('<h1>').text(json.title).appendTo('body');
+    //       $('<div class="card1">').html(json.html).appendTo('body');
+    //     })
+    //     // 要求失敗時要執行的程式碼
+    //     // 狀態碼會被傳遞到回調函式的參數
+    //     .fail(function (xhr, status, errorThrown) {
+    //       console.log('出現錯誤，無法完成!')
+    //       console.log('Error: ' + errorThrown)
+    //       console.log('Status: ' + status)
+    //       console.dir(xhr)
+    //     })
+    //     // 不論成功或失敗都會執行的回調函式
+    //     .always(function (xhr, status) {
+    //       console.log('要求已完成!')
+    //     })
+    // })
+    // $(function () {
+    //   $.ajax({
+    //     type: "GET",
+    //     url: "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-0EF10C78-E76B-49E3-BD74-05B21416C3F5&sort=time",
+    //     dataType: "xml",
+    //     error: function (e) {
+    //       console.log('oh no');
+    //     },
+    //     success: function (e) {
+    //       var data = $(e).find('location');
+    //       var num = data.length;
+    //       var time = data.eq(0).find('time').text();
+    //       var city = data.eq(0).find('parameter').eq(0).find('parameterValue').text();
+    //       var town = data.eq(0).find('parameter').eq(2).find('parameterValue').text();
+    //       console.log(time);
+    //       console.log(city);
+    //       console.log(town);
+    //     }
+    //   })
+    // });
+
+
+
+
+    <script>
+    var $div = $('#content');
+    var $select = $('#city');
+    var $btn = $('#btn');
+    $.get('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-0EF10C78-E76B-49E3-BD74-05B21416C3F5&format=JSON', function (data) {
+      console.log(data);
+    })
+
+  </script>
+
+
+
+
+  // var jqxhr = $.getJSON("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-0EF10C78-E76B-49E3-BD74-05B21416C3F5&format=JSON", function (arr) {   // url是JSON資料的網址，取得的資料存在arr變數中
+      //   console.log("success");   // 請求成功會執行此區塊，可在此處理JSON資料
+      // }).done(function (arr) {
+      //   console.log("second success");   // 另一個請求成功會執行的區塊，也可在此處理JSON資料
+      // }).fail(function () {
+      //   console.log("error");   // 請求失敗會執行這個區塊
+      // }).always(function () {
+      //   console.log("complete");   // 無論請求成功或失敗都會執行的區塊
+      // });
+      // document.getElementById("showData").innerHTML = out;
+
+
+
+      $.get('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-091?Authorization=CWB-0EF10C78-E76B-49E3-BD74-05B21416C3F5&format=JSON', function (e) {
+        console.log(e);
+      });
+
+
+
+      <script type="text/javascript">
+
+    function changeFunc($i) {
+      alert($i);
+      $.ajax({
+        url: "test.php",
+        method: "POST",
+        data: {
+          "name": name,
+          "phone": phone
+        },
+        error: function () {
+          alert("失敗");
+        },
+        success: function () {
+          alert("成功");
+        }
+      });     
+    }
+    
+  </script>
+
+
+
+  CREATE TABLE weather(
+	`datasetDescription` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `locationName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `elementName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `description` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `startTime` datetime COLLATE utf8_unicode_ci NOT NULL,
+    `endTime` datetime COLLATE utf8_unicode_ci NOT NULL,
+    `value` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+)
+
+CREATE TABLE weathernow(
+	`datasetDescription` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `locationName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `elementName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `startTime` datetime COLLATE utf8_unicode_ci NOT NULL,
+    `endTime` datetime COLLATE utf8_unicode_ci NOT NULL,
+    `parameterName` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+)
+
+CREATE TABLE weatherrain(
+	`locationName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `obsTime` datetime COLLATE utf8_unicode_ci NOT NULL,
+    `elementName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `elementValue` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `parameterName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `parameterValue` varchar(100) COLLATE utf8_unicode_ci NOT NULL 
+)
+
+
+CREATE TABLE member(
+	`mid` int(15) COLLATE utf8_unicode_ci NOT NULL,
+    `mname` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+    `musername` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+    `mpasswd` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `msex` ENUM('男','女') COLLATE utf8_unicode_ci NOT NULL,
+    `mbirthday` date COLLATE utf8_unicode_ci NOT NULL,
+    `mlevel` ENUM('admin','member') COLLATE utf8_unicode_ci NOT NULL,
+    `memail` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `mphone` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `maddress` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `mlog` int(20) COLLATE utf8_unicode_ci NOT NULL
+)
+
+CREATE TABLE  member(
+`mid` int auto_incrememt primary key, 
+`mname` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+`maccount` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+`mpassword` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+`mbalance` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+)
+
+

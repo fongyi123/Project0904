@@ -1,0 +1,157 @@
+1.
+https://medium.com/@evanfang.hi/使用node-js撰寫express-api-連結以docker啟動的mysql資料庫-1617d7469ca9
+
+2.產品下拉式ＰＨＰ
+https://dotblogs.com.tw/jellycheng/2011/02/15/21379
+
+3.PHP利用下拉式選單(Select option)搭配JavaScript更新SQL資料
+https://dotblogs.com.tw/jellycheng/2010/12/17/20215
+
+4.如何讓PHP列出全部資料
+https://ithelp.ithome.com.tw/questions/10185303
+
+5.php實現簡單加入購物車功能
+https://codertw.com/程式語言/209868/
+
+6.14-2 資料庫圖片存取
+http://forum.twbts.com/thread-3299-1-1.html
+
+7.如何將圖片預覽上傳及儲存在資料庫中
+https://www.lawrencelin.info/2017/05/preview-before-upload-using-html5-and-backend-process/
+
+8.PHP圖片上傳同時儲存上傳路徑到資料庫
+https://www.itread01.com/content/1544001251.html
+https://www.wibibi.com/info.php?tid=115
+
+9.[筆記] 將HTML中的INPUT標籤套用CSS樣式
+https://pjchender.blogspot.com/2015/04/htmlinputcss.html
+
+10.php做網站購物車 你搞懂了嗎？_PHP教程
+https://www.itread01.com/p/970243.html
+
+11.購物網站教學
+https://www.webs.com.tw/shopping-cart-teaching.html
+
+12.decimal(18,4)同decimal(19,1) 之间的区别
+https://blog.csdn.net/qq_31209383/article/details/61913925
+
+13.表格產生器
+https://divtable.com/generator/
+
+14.Day 02: 撰寫購物車程式
+https://ithelp.ithome.com.tw/articles/10201660
+
+15.
+https://codertw.com/前端開發/385519/
+
+
+16.免費素材
+https://the-allstars.com/blog/website-design/22-copyright-free-free-high-definition-photo-material-sites.html
+https://www.pexels.com/zh-tw/
+https://www.pexels.com/zh-tw/search/書/
+
+17.background-repeat
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-repeat
+
+18.php + js 修改商品圖片的思路問題，多個商品圖片怎麼修改？
+https://ithelp.ithome.com.tw/questions/10190081
+
+19.php把 圖片上傳到 圖片服務器
+https://www.itread01.com/content/1524308529.html
+
+20.新絲路網路書店
+https://www.silkbook.com/search_result.asp?now_page=9&MainCate=A2800&SubCate=A2811&SearchOption=8&SortItem=&SearchText=
+
+21.php上傳檔案筆記
+https://ithelp.ithome.com.tw/articles/10213992
+
+22.
+https://blog.xuite.net/dizzy03/murmur/44669005-%5B轉%5D%5BPHP%5D+上傳圖片及縮圖
+
+23.PHP上傳檔案，透過 PHP $_FILES 陣列輕鬆上傳檔案
+https://www.webtech.tw/info.php?tid=24
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE member(
+	`mid` int(15) COLLATE utf8_unicode_ci NOT NULL,
+    `mname` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+    `musername` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+    `mpasswd` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `msex` ENUM('男','女') COLLATE utf8_unicode_ci NOT NULL,
+    `mbirthday` date COLLATE utf8_unicode_ci NOT NULL,
+    `mstatus` ENUM('normal','Disable') COLLATE utf8_unicode_ci NOT NULL,
+    `memail` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `mphone` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `maddress` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `mlog` int(20) COLLATE utf8_unicode_ci NOT NULL
+)
+create table detail
+(
+    did int auto_increment primary key,
+    daccount varchar(50),
+    dtranstype varchar(50),
+    dtrade int,
+    dtransdate datetime
+);
+
+
+
+
+
+
+create table manager
+(
+    maid int auto_increment primary key,
+    maaccount varchar(50),
+    mapassword varchar(50)
+
+);
+
+CREATE TABLE member(
+	`meid` int(50) auto_increment primary key,
+    `mename` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+    `meaccount` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `mepasswd` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `mebirthday` date COLLATE utf8_unicode_ci NOT NULL,
+    `mestatus` ENUM('normal','Disable') COLLATE utf8_unicode_ci NOT NULL,
+    `memail` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `mephone` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    `meaddress` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+)
+
+create table product
+(
+    prid int(30) auto_increment primary key,
+    prname varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+    prprice int(20) COLLATE utf8_unicode_ci NOT NULL,
+    prquantity int(50) COLLATE utf8_unicode_ci NOT NULL,
+    prdescript varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+    primg blob 
+);
+
+create table orders
+(
+    orid int(50) auto_increment primary key,
+    meid int(15),
+    prid int(30),
+    prprice int(20),
+    orquantity int(30),
+    ordate datetime
+    
+)
